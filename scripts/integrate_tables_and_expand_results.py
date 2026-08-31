@@ -66,7 +66,7 @@ def expand_accepted_tasks(doc: Document) -> None:
     )
     p2 = insert_after(
         p,
-        "This distinction matters for the article's scope. The revised manuscript is no longer framed as a broad benchmark claim across all network-bioinformatics tasks. Instead, it uses the full working release to justify dataset auditability, then focuses its statistical evidence on PPI link prediction. Table 1 therefore performs two roles: it documents the larger benchmark scaffold and defines the empirical boundary of the present paper.",
+        "This distinction matters for the article's scope. The manuscript is framed around a focused PPI link-prediction benchmark rather than a broad benchmark claim across all network-bioinformatics tasks. It uses the full working release to justify dataset auditability, then focuses its statistical evidence on PPI link prediction. Table 1 therefore performs two roles: it documents the larger benchmark scaffold and defines the empirical boundary of the present paper.",
     )
     table1 = move_table_with_caption_after(doc, "Table 1 |", 0, p2)
     after_t1 = insert_after(
