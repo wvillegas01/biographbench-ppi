@@ -1,0 +1,24 @@
+{
+  "mapping_sources": [
+    "Ensembl_HGNC_entrez_id",
+    "UniProt_DR_GeneID"
+  ],
+  "mapping_source_counts": {
+    "Ensembl_HGNC_entrez_id": 19198,
+    "UniProt_DR_GeneID": 18905
+  },
+  "string_proteins_with_entrez_mapping": 19336,
+  "string_protein_nodes": 18767,
+  "string_protein_nodes_with_entrez": 18564,
+  "string_raw_undirected_pairs": 738805,
+  "string_edges_unmapped_to_entrez": 7623,
+  "string_edges_ambiguous_entrez": 16659,
+  "string_entrez_pairs_after_mapping": 766284,
+  "string_expanded_mapped_edge_rows": 780341,
+  "string_self_loops_after_mapping_skipped": 108,
+  "biogrid_entrez_pairs": 961531,
+  "overlap_entrez_pairs": 423528,
+  "string_overlap_ratio": 0.5527036973237076,
+  "biogrid_overlap_ratio": 0.4404725380668954,
+  "jaccard_entrez_pair_overlap": 0.3247199427733313
+}

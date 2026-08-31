@@ -1,0 +1,5 @@
+dataset,task,split,model,feature,seed,num_nodes,num_tasks,macro_auroc,macro_auprc,micro_f1,macro_f1,train_seconds
+obnb_biogrid_gobp,node_classification,val,one_vs_rest_logistic_regression,constant,42,1215,114,0.5,0.01251895170023825,0.024928077486545366,0.023338473447466077,0.10719780000000001
+obnb_biogrid_gobp,node_classification,test,one_vs_rest_logistic_regression,constant,42,1215,114,0.5,0.01068514908670854,0.021477735102863445,0.020077773889871905,0.10719780000000001
+obnb_biogrid_gobp,node_classification,val,one_vs_rest_logistic_regression,one_hot_log_degree,42,1215,114,0.5701422970473966,0.019081959328312584,0.02864904081391621,0.0290668173249457,0.2001111000000002
+obnb_biogrid_gobp,node_classification,test,one_vs_rest_logistic_regression,one_hot_log_degree,42,1215,114,0.5307530476611781,0.014334384449334398,0.025029903772338567,0.023350025876633592,0.2001111000000002

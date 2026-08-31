@@ -1,0 +1,119 @@
+{
+  "dataset_id": "biogrid_human_physical_filtered",
+  "source_dataset": "biogrid_human",
+  "raw_file": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\raw\\BIOGRID-ORGANISM-LATEST.tab3.zip",
+  "output_file": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\processed\\biogrid_human_physical\\edges_entrez_undirected.csv",
+  "raw_rows": 1404902,
+  "kept_evidence_rows": 1264295,
+  "excluded": {
+    "self_loop": 9100,
+    "not_human_human": 112057,
+    "not_physical": 19450
+  },
+  "unique_nodes_entrez": 20376,
+  "unique_undirected_edges": 961531,
+  "density": 0.004632087310705967,
+  "min_evidence_count": 1,
+  "max_evidence_count": 666,
+  "mean_evidence_count": 1.3148770034455468,
+  "top_experimental_systems": [
+    [
+      "Affinity Capture-MS",
+      674918
+    ],
+    [
+      "Proximity Label-MS",
+      178274
+    ],
+    [
+      "Two-hybrid",
+      113988
+    ],
+    [
+      "Affinity Capture-Western",
+      84724
+    ],
+    [
+      "Co-fractionation",
+      73949
+    ],
+    [
+      "Reconstituted Complex",
+      42034
+    ],
+    [
+      "Cross-Linking-MS (XL-MS)",
+      30206
+    ],
+    [
+      "Affinity Capture-RNA",
+      25419
+    ],
+    [
+      "Biochemical Activity",
+      13103
+    ],
+    [
+      "Protein-RNA",
+      8973
+    ],
+    [
+      "Co-localization",
+      5154
+    ],
+    [
+      "Protein-peptide",
+      3659
+    ],
+    [
+      "FRET",
+      2480
+    ],
+    [
+      "Affinity Capture-Luminescence",
+      2010
+    ],
+    [
+      "Co-purification",
+      1675
+    ],
+    [
+      "Co-crystal Structure",
+      1620
+    ],
+    [
+      "PCA",
+      1364
+    ],
+    [
+      "Far Western",
+      734
+    ],
+    [
+      "Surface Display",
+      11
+    ]
+  ],
+  "throughput_counts": [
+    [
+      "High Throughput",
+      1032911
+    ],
+    [
+      "Low Throughput",
+      224542
+    ],
+    [
+      "High Throughput|Low Throughput",
+      6842
+    ]
+  ],
+  "filter_policy": {
+    "experimental_system_type": "physical",
+    "organism_a": "9606",
+    "organism_b": "9606",
+    "remove_missing_entrez": true,
+    "remove_self_loops": true,
+    "collapse_undirected_entrez_pairs": true
+  }
+}

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biographbench"
+version = "0.1.0"
+description = "Auditable benchmark scaffolding for biological graph learning."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.24,<2",
+    "pandas>=2.0,<2.1",
+    "scipy>=1.10,<1.11",
+    "scikit-learn>=1.3,<1.4",
+    "requests>=2.32,<3",
+    "PyYAML>=6,<7",
+    "tqdm>=4.67,<5",
+]
+
+[project.optional-dependencies]
+gnn = [
+    "torch>=2.4",
+]
+obnb = [
+    "obnb==0.1.0",
+]
+dev = [
+    "pytest>=8,<9",
+    "ruff>=0.5,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py38"

@@ -1,0 +1,7 @@
+split,rows,duplicates,bad_labels,same_relation_reverse_hits
+train_pos,4192002,0,0,1442114
+val_pos,188394,0,0,2854
+test_pos,183009,0,0,3144
+train_neg,4311578,0,0,52
+val_neg,208672,0,0,0
+test_neg,218892,0,0,2

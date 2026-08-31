@@ -1,0 +1,57 @@
+{
+  "dataset_id": "obnb_biogrid_gobp",
+  "feature_file": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\processed\\obnb_biogrid_gobp\\features.npz",
+  "source_graph": "BioGRID",
+  "source_label": "GOBP",
+  "version": "obnbdata-0.1.0",
+  "node_count": 19765,
+  "policies": {
+    "constant": {
+      "shape": [
+        19765,
+        1
+      ],
+      "description": "Control feature: all nodes receive value 1."
+    },
+    "degree": {
+      "shape": [
+        19765,
+        1
+      ],
+      "description": "Raw graph degree scalar."
+    },
+    "log_degree": {
+      "shape": [
+        19765,
+        1
+      ],
+      "description": "Natural log1p graph degree scalar."
+    },
+    "one_hot_log_degree": {
+      "shape": [
+        19765,
+        9
+      ],
+      "formula": "bin = min(floor(log2(degree + 1)), 8)",
+      "bin_count": 9,
+      "bin_counts": [
+        0,
+        2386,
+        1965,
+        2387,
+        2839,
+        3263,
+        3419,
+        2206,
+        1300
+      ]
+    }
+  },
+  "degree_summary": {
+    "min": 1,
+    "median": 33.0,
+    "mean": 78.66380310058594,
+    "max": 4145
+  },
+  "leakage_note": "Computed from OBNB benchmark graph. For edge-holdout tasks, analogous structural features must be computed train-only."
+}

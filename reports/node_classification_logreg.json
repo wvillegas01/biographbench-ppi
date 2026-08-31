@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "obnb_biogrid_gobp",
+    "task": "node_classification",
+    "split": "val",
+    "model": "one_vs_rest_logistic_regression",
+    "feature": "constant",
+    "seed": 42,
+    "num_nodes": 1215,
+    "num_tasks": 114,
+    "macro_auroc": 0.5,
+    "macro_auprc": 0.01251895170023825,
+    "micro_f1": 0.024928077486545366,
+    "macro_f1": 0.023338473447466077,
+    "train_seconds": 0.10719780000000001
+  },
+  {
+    "dataset": "obnb_biogrid_gobp",
+    "task": "node_classification",
+    "split": "test",
+    "model": "one_vs_rest_logistic_regression",
+    "feature": "constant",
+    "seed": 42,
+    "num_nodes": 1215,
+    "num_tasks": 114,
+    "macro_auroc": 0.5,
+    "macro_auprc": 0.01068514908670854,
+    "micro_f1": 0.021477735102863445,
+    "macro_f1": 0.020077773889871905,
+    "train_seconds": 0.10719780000000001
+  },
+  {
+    "dataset": "obnb_biogrid_gobp",
+    "task": "node_classification",
+    "split": "val",
+    "model": "one_vs_rest_logistic_regression",
+    "feature": "one_hot_log_degree",
+    "seed": 42,
+    "num_nodes": 1215,
+    "num_tasks": 114,
+    "macro_auroc": 0.5701422970473966,
+    "macro_auprc": 0.019081959328312584,
+    "micro_f1": 0.02864904081391621,
+    "macro_f1": 0.0290668173249457,
+    "train_seconds": 0.2001111000000002
+  },
+  {
+    "dataset": "obnb_biogrid_gobp",
+    "task": "node_classification",
+    "split": "test",
+    "model": "one_vs_rest_logistic_regression",
+    "feature": "one_hot_log_degree",
+    "seed": 42,
+    "num_nodes": 1215,
+    "num_tasks": 114,
+    "macro_auroc": 0.5307530476611781,
+    "macro_auprc": 0.014334384449334398,
+    "micro_f1": 0.025029903772338567,
+    "macro_f1": 0.023350025876633592,
+    "train_seconds": 0.2001111000000002
+  }
+]

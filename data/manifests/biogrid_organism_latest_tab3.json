@@ -1,0 +1,13 @@
+{
+  "dataset_id": "biogrid_organism_latest_tab3",
+  "source": "BioGRID",
+  "version": "5.0.260 latest release observed 2026-08-04",
+  "license": "MIT",
+  "url": "https://downloads.thebiogrid.org/Download/BioGRID/Latest-Release/BIOGRID-ORGANISM-LATEST.tab3.zip",
+  "filename": "BIOGRID-ORGANISM-LATEST.tab3.zip",
+  "path": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\raw\\BIOGRID-ORGANISM-LATEST.tab3.zip",
+  "download_date_utc": "2026-08-04T23:32:07.902774+00:00",
+  "status": "already_present",
+  "size_bytes": 186886894,
+  "sha256": "5f6973cc35e59ad90416600f56194ac7d262628b0e20341940060174c5f93e9b"
+}

@@ -1,0 +1,2 @@
+dataset_id,raw_rows,directed_unique_edges,directed_duplicate_edges,self_loops,undirected_edges_after_collapse,symmetric_excess_rows,nodes,connected_components,largest_component_nodes,largest_component_ratio,density,average_degree,median_degree,min_degree,max_degree,degree_q25,degree_q75,score_min,score_q25,score_median,score_q75,score_max
+string_human_physical_v12,1477610,1477610,0,0,738805,738805,18767,5,18758,0.9995204348057761,0.004195592067433907,78.7344807374647,39,1,2943,15.0,91.0,150,192.0,292.0,452.0,999

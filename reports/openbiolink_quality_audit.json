@@ -1,0 +1,182 @@
+{
+  "dataset_id": "openbiolink2020_hq_directed",
+  "file": "HQ_DIR.zip",
+  "size_bytes": 109387184,
+  "graph_directed": "True",
+  "node_type_counts": {
+    "ANATOMY": 16031,
+    "DIS": 9509,
+    "DRUG": 77635,
+    "GENE": 19598,
+    "GO": 44945,
+    "PATHWAY": 2363,
+    "PHENOTYPE": 14586
+  },
+  "nodes_in_nodes_csv": 184667,
+  "nodes_touched_by_split_triples": 184732,
+  "split_counts": {
+    "train_pos": 4192002,
+    "val_pos": 188394,
+    "test_pos": 183009,
+    "train_neg": 4311578,
+    "val_neg": 208672,
+    "test_neg": 218892
+  },
+  "duplicate_counts": {
+    "train_pos": 0,
+    "val_pos": 0,
+    "test_pos": 0,
+    "train_neg": 0,
+    "val_neg": 0,
+    "test_neg": 0
+  },
+  "bad_label_counts": {
+    "train_pos": 0,
+    "val_pos": 0,
+    "test_pos": 0,
+    "train_neg": 0,
+    "val_neg": 0,
+    "test_neg": 0
+  },
+  "overlaps": {
+    "test_neg__test_pos": 0,
+    "test_neg__train_neg": 0,
+    "test_neg__train_pos": 0,
+    "test_neg__val_neg": 0,
+    "test_neg__val_pos": 0,
+    "test_pos__train_neg": 0,
+    "test_pos__train_pos": 0,
+    "test_pos__val_neg": 0,
+    "test_pos__val_pos": 0,
+    "train_neg__train_pos": 0,
+    "train_neg__val_neg": 0,
+    "train_neg__val_pos": 0,
+    "train_pos__val_neg": 0,
+    "train_pos__val_pos": 0,
+    "val_neg__val_pos": 0
+  },
+  "positive_negative_overlap": 0,
+  "same_relation_reverse_hits": {
+    "train_pos": 1442114,
+    "val_pos": 2854,
+    "test_pos": 3144,
+    "train_neg": 52,
+    "val_neg": 0,
+    "test_neg": 2
+  },
+  "unique_positive_triples": 4563405,
+  "unique_negative_triples": 4739142,
+  "relation_count": 28,
+  "top_relations": [
+    [
+      "GENE_EXPRESSED_ANATOMY",
+      2917406
+    ],
+    [
+      "GENE_GENE",
+      1508169
+    ],
+    [
+      "GENE_REACTION_GENE",
+      739393
+    ],
+    [
+      "GENE_CATALYSIS_GENE",
+      575750
+    ],
+    [
+      "GENE_BINDING_GENE",
+      544832
+    ],
+    [
+      "GENE_GO",
+      408225
+    ],
+    [
+      "DRUG_BINDING_GENE",
+      357779
+    ],
+    [
+      "GENE_DRUG",
+      347235
+    ],
+    [
+      "GENE_PHENOTYPE",
+      322006
+    ],
+    [
+      "GENE_PATHWAY",
+      271618
+    ],
+    [
+      "GENE_OVEREXPRESSED_ANATOMY",
+      267418
+    ],
+    [
+      "IS_A",
+      262068
+    ],
+    [
+      "GENE_UNDEREXPRESSED_ANATOMY",
+      258474
+    ],
+    [
+      "DRUG_PHENOTYPE",
+      178192
+    ],
+    [
+      "GENE_ACTIVATION_GENE",
+      56215
+    ]
+  ],
+  "top_sources": [
+    [
+      "GENERATED",
+      4145702
+    ],
+    [
+      "Bgee",
+      2301699
+    ],
+    [
+      "STRING",
+      1652789
+    ],
+    [
+      "STITCH",
+      423554
+    ],
+    [
+      "GO",
+      287951
+    ],
+    [
+      "HPO",
+      203397
+    ],
+    [
+      "CDT",
+      135809
+    ],
+    [
+      "SIDER",
+      89096
+    ],
+    [
+      "UBERON",
+      33344
+    ],
+    [
+      "DrugCentral",
+      14290
+    ],
+    [
+      "DO",
+      11953
+    ],
+    [
+      "DisGeNet",
+      2963
+    ]
+  ]
+}

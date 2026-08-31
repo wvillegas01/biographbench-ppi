@@ -1,0 +1,6 @@
+dataset_id,eligible,nodes,positive_edges,train_pos,val_pos,test_pos,checks
+string_human_physical_v12,yes_for_pilot_link_prediction,18767,738805,591045,73880,73880,OK
+biogrid_human,yes_for_pilot_link_prediction_after_filtering,20376,961531,769225,96153,96153,OK
+biogrid_human_physical_no_string_overlap,yes_for_overlap_ablation_link_prediction,19591,538003,430403,53800,53800,OK
+string_human_physical_no_biogrid_overlap,yes_for_overlap_ablation_link_prediction,16781,314539,251633,31453,31453,OK
+obnb_biogrid_gobp,yes_for_pilot_node_classification,19765,1554790,,,,OK

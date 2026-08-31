@@ -1,0 +1,2 @@
+dataset_id,rows,unique_entrez_nodes,self_loops,unique_undirected_entrez_pairs_any_type,unique_physical_pairs,unique_genetic_pairs,duplicate_same_type_edges,duplicate_any_type_pairs,organism_mismatch
+biogrid_human,1404902,29501,9333,1054784,1037803,18935,341053,343007,112686

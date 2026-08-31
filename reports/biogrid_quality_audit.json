@@ -1,0 +1,217 @@
+{
+  "dataset_id": "biogrid_human",
+  "file": "BIOGRID-ORGANISM-LATEST.tab3.zip",
+  "human_internal_file": "BIOGRID-ORGANISM-Homo_sapiens-5.0.260.tab3.txt",
+  "size_bytes": 186886894,
+  "rows": 1404902,
+  "columns": [
+    "#BioGRID Interaction ID",
+    "Entrez Gene Interactor A",
+    "Entrez Gene Interactor B",
+    "BioGRID ID Interactor A",
+    "BioGRID ID Interactor B",
+    "Systematic Name Interactor A",
+    "Systematic Name Interactor B",
+    "Official Symbol Interactor A",
+    "Official Symbol Interactor B",
+    "Synonyms Interactor A",
+    "Synonyms Interactor B",
+    "Experimental System",
+    "Experimental System Type",
+    "Author",
+    "Publication Source",
+    "Organism ID Interactor A",
+    "Organism ID Interactor B",
+    "Throughput",
+    "Score",
+    "Modification",
+    "Qualifications",
+    "Tags",
+    "Source Database",
+    "SWISS-PROT Accessions Interactor A",
+    "TREMBL Accessions Interactor A",
+    "REFSEQ Accessions Interactor A",
+    "SWISS-PROT Accessions Interactor B",
+    "TREMBL Accessions Interactor B",
+    "REFSEQ Accessions Interactor B",
+    "Ontology Term IDs",
+    "Ontology Term Names",
+    "Ontology Term Categories",
+    "Ontology Term Qualifier IDs",
+    "Ontology Term Qualifier Names",
+    "Ontology Term Types",
+    "Organism Name Interactor A",
+    "Organism Name Interactor B"
+  ],
+  "unique_entrez_nodes": 29501,
+  "unique_biogrid_nodes": 29598,
+  "unique_symbol_nodes": 28076,
+  "self_loops": 9333,
+  "organism_mismatch": 112686,
+  "missing_entrez_a": 6997,
+  "missing_entrez_b": 114,
+  "unique_undirected_entrez_pairs_any_type": 1054784,
+  "unique_undirected_entrez_edges_by_type": 1056738,
+  "unique_physical_pairs": 1037803,
+  "unique_genetic_pairs": 18935,
+  "physical_genetic_overlap_pairs": 1954,
+  "exact_duplicate_rows": 6504,
+  "duplicate_same_type_edges": 341053,
+  "duplicate_any_type_pairs": 343007,
+  "score_missing": 0,
+  "score_nonempty": 1404902,
+  "interaction_type_counts": [
+    [
+      "physical",
+      1385452
+    ],
+    [
+      "genetic",
+      19450
+    ]
+  ],
+  "top_experimental_systems": [
+    [
+      "Affinity Capture-MS",
+      724160
+    ],
+    [
+      "Proximity Label-MS",
+      213392
+    ],
+    [
+      "Two-hybrid",
+      121764
+    ],
+    [
+      "Affinity Capture-Western",
+      91063
+    ],
+    [
+      "Co-fractionation",
+      76160
+    ],
+    [
+      "Reconstituted Complex",
+      48845
+    ],
+    [
+      "Cross-Linking-MS (XL-MS)",
+      31377
+    ],
+    [
+      "Affinity Capture-RNA",
+      27075
+    ],
+    [
+      "Biochemical Activity",
+      15945
+    ],
+    [
+      "Protein-RNA",
+      10954
+    ],
+    [
+      "Negative Genetic",
+      10611
+    ],
+    [
+      "Protein-peptide",
+      5831
+    ],
+    [
+      "Co-localization",
+      5559
+    ],
+    [
+      "Positive Genetic",
+      4409
+    ],
+    [
+      "FRET",
+      2814
+    ],
+    [
+      "PCA",
+      2787
+    ],
+    [
+      "Co-crystal Structure",
+      2447
+    ],
+    [
+      "Affinity Capture-Luminescence",
+      2443
+    ],
+    [
+      "Synthetic Lethality",
+      2266
+    ],
+    [
+      "Co-purification",
+      1940
+    ]
+  ],
+  "throughput_counts": [
+    [
+      "High Throughput",
+      1149515
+    ],
+    [
+      "Low Throughput",
+      248263
+    ],
+    [
+      "High Throughput|Low Throughput",
+      7124
+    ]
+  ],
+  "top_sources": [
+    [
+      "BIOGRID",
+      1404902
+    ]
+  ],
+  "top_publications": [
+    [
+      "PUBMED:33961781",
+      169808
+    ],
+    [
+      "PUBMED:28514442",
+      56473
+    ],
+    [
+      "PUBMED:32296183",
+      52414
+    ],
+    [
+      "PUBMED:34079125",
+      33974
+    ],
+    [
+      "PUBMED:35271311",
+      29754
+    ],
+    [
+      "PUBMED:26496610",
+      29164
+    ],
+    [
+      "PUBMED:35831314",
+      25080
+    ],
+    [
+      "PUBMED:26186194",
+      23712
+    ],
+    [
+      "PUBMED:40355756",
+      18990
+    ],
+    [
+      "PUBMED:26344197",
+      16795
+    ]
+  ]
+}

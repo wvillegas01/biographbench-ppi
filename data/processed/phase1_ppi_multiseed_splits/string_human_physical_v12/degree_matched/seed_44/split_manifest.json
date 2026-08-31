@@ -1,0 +1,28 @@
+{
+  "dataset_id": "string_human_physical_v12",
+  "seed": 44,
+  "val_ratio": 0.1,
+  "test_ratio": 0.1,
+  "negative_strategy": "degree_matched",
+  "nodes": 18767,
+  "positive_edges_total_undirected": 738805,
+  "train_pos": 591045,
+  "val_pos": 73880,
+  "test_pos": 73880,
+  "train_neg": 591045,
+  "val_neg": 73880,
+  "test_neg": 73880,
+  "spanning_forest_edges_protected": 18762,
+  "original_components": 5,
+  "train_components": 5,
+  "train_components_preserved_by_construction": true,
+  "split_errors": [],
+  "output_dir": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\processed\\phase1_ppi_multiseed_splits\\string_human_physical_v12\\degree_matched\\seed_44",
+  "phase": "phase1_ppi_multiseed",
+  "source_edges": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\processed\\string_human_physical_v12\\edges_undirected.csv",
+  "edge_columns": [
+    "protein1",
+    "protein2"
+  ],
+  "compressed_split_files": true
+}

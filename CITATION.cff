@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use BioGraphBench-PPI, please cite the software and the associated article."
+title: "BioGraphBench-PPI: an audit-first benchmark for protein-protein interaction link prediction"
+type: software
+authors:
+  - family-names: "To be completed"
+    given-names: "Author"
+version: "0.1.0"
+date-released: "2026-08-31"
+repository-code: "https://github.com/USER_OR_ORG/biographbench-ppi"
+license: MIT
+keywords:
+  - protein-protein interaction
+  - link prediction
+  - negative sampling
+  - graph machine learning
+  - reproducible benchmark
+abstract: "BioGraphBench-PPI provides auditable scripts, manifests, split contracts, model configurations, statistical summaries, and article figures for reproducible PPI link-prediction benchmarking."

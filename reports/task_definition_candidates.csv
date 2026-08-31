@@ -1,0 +1,4 @@
+candidate_id,dataset_id,candidate_task,current_status,reason_not_accepted,next_action,paper_role
+kg_openbiolink2020_hq,openbiolink2020_hq_directed,knowledge_graph_link_prediction_with_negatives,downloaded_and_quality_audited,negatives include 54 same-relation reverse hits against positives; inverse-relation semantics need review,build relation-inverse audit and filtered KG protocol,future_extension_or_limitations
+kg_ogbl_biokg,ogbl_biokg,knowledge_graph_link_prediction,download_url_verified,not downloaded or locally processed in this MVP,download inspect and audit official split leakage,future_extension
+nc_obnb_string_gobp,obnb_string_gobp,multilabel_node_classification,candidate_identified,not exported or compared against OBNB BioGRID+GOBP yet,export and compare feasibility/readiness,future_extension

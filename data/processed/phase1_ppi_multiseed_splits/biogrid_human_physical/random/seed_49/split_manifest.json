@@ -1,0 +1,28 @@
+{
+  "dataset_id": "biogrid_human_physical",
+  "seed": 49,
+  "val_ratio": 0.1,
+  "test_ratio": 0.1,
+  "negative_strategy": "random",
+  "nodes": 20376,
+  "positive_edges_total_undirected": 961531,
+  "train_pos": 769225,
+  "val_pos": 96153,
+  "test_pos": 96153,
+  "train_neg": 769225,
+  "val_neg": 96153,
+  "test_neg": 96153,
+  "spanning_forest_edges_protected": 20375,
+  "original_components": 1,
+  "train_components": 1,
+  "train_components_preserved_by_construction": true,
+  "split_errors": [],
+  "output_dir": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\processed\\phase1_ppi_multiseed_splits\\biogrid_human_physical\\random\\seed_49",
+  "phase": "phase1_ppi_multiseed",
+  "source_edges": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\processed\\biogrid_human_physical\\edges_entrez_undirected.csv",
+  "edge_columns": [
+    "entrez_a",
+    "entrez_b"
+  ],
+  "compressed_split_files": true
+}

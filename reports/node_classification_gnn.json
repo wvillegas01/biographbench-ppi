@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "obnb_biogrid_gobp",
+    "task": "node_classification",
+    "model": "mlp",
+    "feature": "one_hot_log_degree",
+    "seed": 42,
+    "best_epoch": 72,
+    "train_seconds": 12.2553596,
+    "val": {
+      "macro_auroc": 0.515485520747608,
+      "macro_auprc": 0.016805943836219757,
+      "micro_f1": 0.0,
+      "macro_f1": 0.0
+    },
+    "test": {
+      "macro_auroc": 0.4880157474720004,
+      "macro_auprc": 0.012943513443821995,
+      "micro_f1": 0.0,
+      "macro_f1": 0.0
+    }
+  },
+  {
+    "dataset": "obnb_biogrid_gobp",
+    "task": "node_classification",
+    "model": "gcn",
+    "feature": "one_hot_log_degree",
+    "seed": 42,
+    "best_epoch": 7,
+    "train_seconds": 14.858239900000001,
+    "val": {
+      "macro_auroc": 0.5061552116569163,
+      "macro_auprc": 0.01927057085298938,
+      "micro_f1": 0.0,
+      "macro_f1": 0.0
+    },
+    "test": {
+      "macro_auroc": 0.4935590568722377,
+      "macro_auprc": 0.015926364290892815,
+      "micro_f1": 0.0,
+      "macro_f1": 0.0
+    }
+  }
+]

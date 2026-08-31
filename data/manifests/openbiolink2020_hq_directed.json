@@ -1,0 +1,13 @@
+{
+  "dataset_id": "openbiolink2020_hq_directed",
+  "source": "OpenBioLink / Zenodo",
+  "version": "2020",
+  "license": "CC BY 4.0",
+  "url": "https://zenodo.org/api/records/3834052/files/HQ_DIR.zip/content",
+  "filename": "HQ_DIR.zip",
+  "path": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\raw\\HQ_DIR.zip",
+  "download_date_utc": "2026-08-04T23:32:07.762930+00:00",
+  "status": "already_present",
+  "size_bytes": 109387184,
+  "sha256": "3836c5bca14816ae60e44a5d29f2f893ed566081ea48aaf665ccc26ec746cf55"
+}

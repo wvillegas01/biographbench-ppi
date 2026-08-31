@@ -1,0 +1,42 @@
+{
+  "dataset_id": "obnb_biogrid_gobp",
+  "source": "Open Biomedical Network Benchmark",
+  "obnb_root": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\obnb",
+  "version": "obnbdata-0.1.0",
+  "graph_name": "BioGRID",
+  "label_name": "GOBP",
+  "graph_nodes": 19765,
+  "graph_edges": 1554790,
+  "directed": false,
+  "weighted": false,
+  "label_tasks": 114,
+  "y_shape": [
+    19765,
+    114
+  ],
+  "y_mask_shape": [
+    19765,
+    114
+  ],
+  "total_positive_labels": 10199,
+  "total_observed_labels": 692550,
+  "split_counts": {
+    "train": 3645,
+    "val": 1215,
+    "test": 1215
+  },
+  "split_positive_counts": {
+    "train": 6985,
+    "val": 1734,
+    "test": 1480
+  },
+  "min_task_positives": 50,
+  "median_task_positives": 76.0,
+  "max_task_positives": 186,
+  "min_task_negatives": 5889,
+  "median_task_negatives": 5999.0,
+  "max_task_negatives": 6025,
+  "splitter": "RatioPartition(property_converter=GenePropertyConverter(name='PubMedCount'), ascending=False, ratios=(0.6, 0.2, 0.2))",
+  "feature_policy": "not_exported_yet; recommended initial feature OneHotLogDeg or graph-as-feature baseline",
+  "output_dir": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\processed\\obnb_biogrid_gobp"
+}

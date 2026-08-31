@@ -1,0 +1,9 @@
+table_id,section,title,purpose,source_artifacts,status
+Table 1,Introduction,Contributions,Summarize the article contributions,reports/mvp_status_report.md;reports/task_definition_matrix.md,planned
+Table 2,Benchmark Audit and Design,Existing benchmark coverage and BioGraphBench gap,Position BioGraphBench relative to existing biomedical graph benchmarks,reports/benchmark_gap_analysis.md,planned
+Table 3,Benchmark Audit and Design,Dataset candidate audit,Show inclusion/exclusion decisions for candidate datasets,reports/dataset_audit.csv;reports/dataset_readiness_matrix.csv,ready_source_exists
+Table 4,Accepted Tasks and Reproducibility Protocol,Accepted BioGraphBench MVP tasks,Define final accepted benchmark tasks,reports/task_definition_matrix.csv,ready_source_exists
+Table 5,Accepted Tasks and Reproducibility Protocol,Leakage and reproducibility controls,Map each risk to its control and validation artifact,reports/task_definition_matrix.csv;reports/split_package_refactor_status.md;reports/feature_package_refactor_status.md,planned
+Table 6,Baseline Results,Best link prediction results,Report best link prediction baseline per task,reports/baseline_summary.md;reports/model_baseline_matrix.csv,ready_source_exists
+Table 7,Baseline Results,Node classification results,Report logistic MLP GCN and threshold-tuned results,reports/model_baseline_matrix.csv;reports/node_classification_threshold_tuning.md,ready_source_exists
+Table 8,Discussion Limitations and Roadmap,Limitations and next actions,State current limitations and concrete next steps,reports/next_steps.md;reports/mvp_status_report.md,planned

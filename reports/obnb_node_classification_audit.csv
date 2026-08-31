@@ -1,0 +1,3 @@
+dataset_id,graph_name,label_name,version,graph_nodes,graph_edges,directed,weighted,label_tasks,labeled_entities,y_positive_total,y_mask_observed_total,min_task_positives,median_task_positives,max_task_positives,min_task_negatives,median_task_negatives,max_task_negatives,splitter
+obnb_biogrid_gobp,BioGRID,GOBP,obnbdata-0.1.0,19765,1554790,False,False,114,6075,10199,692550,50,76.0,186,5889,5999.0,6025,"RatioPartition(property_converter=GenePropertyConverter(name='PubMedCount'), ascending=False, ratios=(0.6, 0.2, 0.2))"
+obnb_string_gobp,STRING,GOBP,obnbdata-0.1.0,18480,11019492,False,True,116,6104,10318,708064,50,75.0,184,5920,6029.0,6054,"RatioPartition(property_converter=GenePropertyConverter(name='PubMedCount'), ascending=False, ratios=(0.6, 0.2, 0.2))"

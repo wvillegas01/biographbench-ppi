@@ -1,0 +1,28 @@
+{
+  "title": "BioGraphBench-PPI: an audit-first benchmark for protein-protein interaction link prediction",
+  "upload_type": "software",
+  "description": "Auditable code, manifests, split contracts, model configurations, statistical summaries, and figure/table scripts for BioGraphBench-PPI.",
+  "creators": [
+    {
+      "name": "To be completed, Author",
+      "affiliation": "To be completed"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "protein-protein interaction",
+    "link prediction",
+    "negative sampling",
+    "graph machine learning",
+    "reproducible benchmark"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/USER_OR_ORG/biographbench-ppi",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "access_right": "open",
+  "version": "0.1.0"
+}

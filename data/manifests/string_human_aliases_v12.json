@@ -1,0 +1,13 @@
+{
+  "dataset_id": "string_human_aliases_v12",
+  "source": "STRING",
+  "version": "12.0",
+  "license": "CC BY 4.0",
+  "url": "https://stringdb-downloads.org/download/protein.aliases.v12.0/9606.protein.aliases.v12.0.txt.gz",
+  "filename": "9606.protein.aliases.v12.0.txt.gz",
+  "path": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\raw\\9606.protein.aliases.v12.0.txt.gz",
+  "download_date_utc": "2026-08-04T23:32:07.685046+00:00",
+  "status": "downloaded",
+  "size_bytes": 19777800,
+  "sha256": "b65f730b993ed0c1bd72edf4565d3d425db42861101b29699704810e8f125680"
+}

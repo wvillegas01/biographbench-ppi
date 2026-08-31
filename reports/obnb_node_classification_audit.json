@@ -1,0 +1,118 @@
+[
+  {
+    "dataset_id": "obnb_biogrid_gobp",
+    "graph_name": "BioGRID",
+    "label_name": "GOBP",
+    "version": "obnbdata-0.1.0",
+    "graph_nodes": 19765,
+    "graph_edges": 1554790,
+    "directed": false,
+    "weighted": false,
+    "label_tasks": 114,
+    "dataset_nodes": 19765,
+    "labeled_entities": 6075,
+    "y_shape": [
+      19765,
+      114
+    ],
+    "y_positive_total": 10199,
+    "y_mask_observed_total": 692550,
+    "min_task_positives": 50,
+    "median_task_positives": 76.0,
+    "max_task_positives": 186,
+    "min_task_negatives": 5889,
+    "median_task_negatives": 5999.0,
+    "max_task_negatives": 6025,
+    "split_counts": {
+      "train": 3645,
+      "val": 1215,
+      "test": 1215
+    },
+    "split_positive_counts": {
+      "train": 6985,
+      "val": 1734,
+      "test": 1480
+    },
+    "splitter": "RatioPartition(property_converter=GenePropertyConverter(name='PubMedCount'), ascending=False, ratios=(0.6, 0.2, 0.2))",
+    "first_label_ids": [
+      "GO:0051260",
+      "GO:0071222",
+      "GO:0016477",
+      "GO:0150104",
+      "GO:0043065",
+      "GO:0071456",
+      "GO:0010629",
+      "GO:0051056",
+      "GO:0042981",
+      "GO:0046330"
+    ],
+    "graph_file": {
+      "path": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\obnb\\BioGRID\\processed\\data.npz",
+      "size_bytes": 13150382,
+      "sha256": "bfe3566d610176a77fdba3dbb914d9fb248ae602558e58c957cb7a9ecf64fa2d"
+    },
+    "label_file": {
+      "path": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\obnb\\GOBP\\processed\\data.gmt",
+      "size_bytes": 269671,
+      "sha256": "79aafc5713f815828b5650a189e772ad71aa96b3511265c175b121fe0a0c07a7"
+    }
+  },
+  {
+    "dataset_id": "obnb_string_gobp",
+    "graph_name": "STRING",
+    "label_name": "GOBP",
+    "version": "obnbdata-0.1.0",
+    "graph_nodes": 18480,
+    "graph_edges": 11019492,
+    "directed": false,
+    "weighted": true,
+    "label_tasks": 116,
+    "dataset_nodes": 18480,
+    "labeled_entities": 6104,
+    "y_shape": [
+      18480,
+      116
+    ],
+    "y_positive_total": 10318,
+    "y_mask_observed_total": 708064,
+    "min_task_positives": 50,
+    "median_task_positives": 75.0,
+    "max_task_positives": 184,
+    "min_task_negatives": 5920,
+    "median_task_negatives": 6029.0,
+    "max_task_negatives": 6054,
+    "split_counts": {
+      "train": 3662,
+      "val": 1221,
+      "test": 1221
+    },
+    "split_positive_counts": {
+      "train": 7092,
+      "val": 1733,
+      "test": 1493
+    },
+    "splitter": "RatioPartition(property_converter=GenePropertyConverter(name='PubMedCount'), ascending=False, ratios=(0.6, 0.2, 0.2))",
+    "first_label_ids": [
+      "GO:0051260",
+      "GO:0016477",
+      "GO:0150104",
+      "GO:0043065",
+      "GO:0071456",
+      "GO:0010629",
+      "GO:0051056",
+      "GO:0042981",
+      "GO:0046330",
+      "GO:0005975"
+    ],
+    "graph_file": {
+      "path": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\obnb\\STRING\\processed\\data.npz",
+      "size_bytes": 132899960,
+      "sha256": "9d3e00b7a3feb7f9bd1d4adc1137608b30097965ebc2a08e39666dffdcef1ee8"
+    },
+    "label_file": {
+      "path": "C:\\Users\\wilop\\Dropbox\\MPDI\\2026\\BioGraphBench\\Auditoria\\data\\obnb\\GOBP\\processed\\data.gmt",
+      "size_bytes": 269671,
+      "sha256": "79aafc5713f815828b5650a189e772ad71aa96b3511265c175b121fe0a0c07a7"
+    }
+  }
+]

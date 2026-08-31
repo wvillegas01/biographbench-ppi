@@ -1,0 +1,5 @@
+dataset,task,split,model,feature,seed,best_epoch,macro_auroc,macro_auprc,micro_f1,macro_f1,train_seconds
+obnb_biogrid_gobp,node_classification,val,mlp,one_hot_log_degree,42,72,0.515485520747608,0.016805943836219757,0.0,0.0,12.2553596
+obnb_biogrid_gobp,node_classification,test,mlp,one_hot_log_degree,42,72,0.4880157474720004,0.012943513443821995,0.0,0.0,12.2553596
+obnb_biogrid_gobp,node_classification,val,gcn,one_hot_log_degree,42,7,0.5061552116569163,0.01927057085298938,0.0,0.0,14.858239900000001
+obnb_biogrid_gobp,node_classification,test,gcn,one_hot_log_degree,42,7,0.4935590568722377,0.015926364290892815,0.0,0.0,14.858239900000001
