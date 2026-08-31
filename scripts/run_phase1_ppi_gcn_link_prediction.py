@@ -209,17 +209,21 @@ def run_one(dataset_id: str, strategy: str, seed: int, args: argparse.Namespace)
     start_train = time.perf_counter()
     last_loss = float("nan")
     for _epoch in range(args.epochs):
-        order = torch.randperm(train_edges.shape[0], generator=generator)
         model.train()
-        for start in range(0, train_edges.shape[0], args.batch_size):
-            idx = order[start : start + args.batch_size]
-            z = model(x, adj)
-            logits = edge_logits(z, train_edges[idx])
-            loss = F.binary_cross_entropy_with_logits(logits, train_labels[idx])
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-            last_loss = float(loss.detach().cpu())
+        if args.training_pairs_per_epoch and train_edges.shape[0] > args.training_pairs_per_epoch:
+            idx = torch.randperm(train_edges.shape[0], generator=generator)[: args.training_pairs_per_epoch]
+            epoch_edges = train_edges[idx]
+            epoch_labels = train_labels[idx]
+        else:
+            epoch_edges = train_edges
+            epoch_labels = train_labels
+        z = model(x, adj)
+        logits = edge_logits(z, epoch_edges)
+        loss = F.binary_cross_entropy_with_logits(logits, epoch_labels)
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        last_loss = float(loss.detach().cpu())
     train_seconds = time.perf_counter() - start_train
 
     rows: list[dict[str, object]] = []
@@ -317,6 +321,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--eval-batch-size", type=int, default=131072)
     parser.add_argument("--max-train-pairs-per-class", type=int, default=None)
     parser.add_argument("--max-eval-pairs-per-class", type=int, default=None)
+    parser.add_argument("--training-pairs-per-epoch", type=int, default=200000)
     parser.add_argument("--resume", action="store_true")
     return parser.parse_args()
 
