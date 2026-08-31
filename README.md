@@ -46,13 +46,15 @@ make test
 
 Classical and random-walk baselines are retained in `results/phase1`.
 
-The reviewer-requested GCN link-prediction extension is implemented as:
+The GCN link-prediction baseline is implemented as:
 
 ```powershell
 python scripts/run_phase1_ppi_gcn_link_prediction.py --resume
 ```
 
 The script builds the propagation graph exclusively from train-positive edges, derives node features only from that graph, and evaluates AUROC, AUPRC, Brier score, NLL, ECE-10, training time, and inference time.
+
+The retained GCN result tables are available in `results/phase1/ppi_gcn_link_prediction.csv` and `results/phase1/ppi_gcn_link_prediction_summary.csv`.
 
 ## Data Availability
 

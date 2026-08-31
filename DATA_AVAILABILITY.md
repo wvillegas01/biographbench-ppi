@@ -20,4 +20,4 @@ The public code repository is available at:
 
 `https://github.com/wvillegas01/biographbench-ppi`
 
-Before resubmission, archive release `v0.1.0` through Zenodo and replace the DOI placeholder in the manuscript with the assigned Zenodo DOI.
+Release `v0.1.0` should be archived through Zenodo to provide a permanent DOI for the exact version used in the manuscript.

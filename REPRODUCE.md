@@ -28,7 +28,7 @@ Classical and node2vec-compatible baselines:
 python scripts/run_phase1_ppi_node2vec.py --resume
 ```
 
-GCN link-prediction baseline prepared for reviewer-requested extension:
+GCN link-prediction baseline:
 
 ```powershell
 python scripts/run_phase1_ppi_gcn_link_prediction.py --resume
