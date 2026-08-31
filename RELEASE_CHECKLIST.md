@@ -10,8 +10,8 @@
 - [ ] Create a public GitHub repository.
 - [x] Push the repository.
 - [x] Create and push tag `v0.1.0`.
-- [ ] Enable Zenodo GitHub integration for the public repository.
-- [ ] Create GitHub release `v0.1.0` from the existing tag.
+- [x] Enable Zenodo GitHub integration for the public repository.
+- [x] Create GitHub release `v0.1.0` from the existing tag.
 - [ ] Attach large split files as release assets or deposit them with the Zenodo record.
-- [ ] Copy the Zenodo version DOI and concept DOI into the manuscript.
-- [ ] Update the Data Availability section from future tense to public-availability wording.
+- [x] Copy the Zenodo DOI into the manuscript: `10.5281/zenodo.22216311`.
+- [x] Update the Data Availability section from future tense to public-availability wording.

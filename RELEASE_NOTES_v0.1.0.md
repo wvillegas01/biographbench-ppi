@@ -2,6 +2,8 @@
 
 Initial reproducibility release for the BioGraphBench-PPI manuscript.
 
+Archived DOI: https://doi.org/10.5281/zenodo.22216311
+
 This release includes:
 
 - acquisition, filtering, canonicalization, split-generation, validation, and reporting scripts;

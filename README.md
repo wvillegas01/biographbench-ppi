@@ -62,4 +62,4 @@ Raw STRING, BioGRID, and OBNB files must be obtained from their original provide
 
 ## Citation
 
-Citation metadata is provided in `CITATION.cff`. The public repository is available at `https://github.com/wvillegas01/biographbench-ppi`. Add the Zenodo DOI after release `v0.1.0` is archived.
+Citation metadata is provided in `CITATION.cff`. The public repository is available at `https://github.com/wvillegas01/biographbench-ppi` and the archived release is available on Zenodo at `https://doi.org/10.5281/zenodo.22216311`.

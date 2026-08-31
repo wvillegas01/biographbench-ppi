@@ -37,6 +37,11 @@
       "identifier": "https://github.com/wvillegas01/biographbench-ppi",
       "relation": "isSupplementTo",
       "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.22216311",
+      "relation": "isIdenticalTo",
+      "scheme": "doi"
     }
   ],
   "access_right": "open",
