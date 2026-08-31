@@ -9,8 +9,9 @@
 - [ ] Run or attach full GCN-PPI results before claiming reviewer-requested GNN evidence.
 - [ ] Create a public GitHub repository.
 - [x] Push the repository.
+- [x] Create and push tag `v0.1.0`.
 - [ ] Enable Zenodo GitHub integration for the public repository.
-- [ ] Create release `v0.1.0`.
+- [ ] Create GitHub release `v0.1.0` from the existing tag.
 - [ ] Attach large split files as release assets or deposit them with the Zenodo record.
 - [ ] Copy the Zenodo version DOI and concept DOI into the manuscript.
 - [ ] Update the Data Availability section from future tense to public-availability wording.
