@@ -3,8 +3,16 @@ message: "If you use BioGraphBench-PPI, please cite the software and the associa
 title: "BioGraphBench-PPI: an audit-first benchmark for protein-protein interaction link prediction"
 type: software
 authors:
-  - family-names: "To be completed"
-    given-names: "Author"
+  - family-names: "Cabrera-Andrade"
+    given-names: "Alejandro"
+  - family-names: "Robalino-Díaz"
+    given-names: "Jorge"
+  - family-names: "Dueñas-Espín"
+    given-names: "Iván"
+  - family-names: "Zambrano"
+    given-names: "Ana Karina"
+  - family-names: "Villegas-Ch"
+    given-names: "William"
 version: "0.1.0"
 date-released: "2026-08-31"
 repository-code: "https://github.com/wvillegas01/biographbench-ppi"

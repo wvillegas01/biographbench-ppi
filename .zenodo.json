@@ -4,8 +4,24 @@
   "description": "Auditable code, manifests, split contracts, model configurations, statistical summaries, and figure/table scripts for BioGraphBench-PPI.",
   "creators": [
     {
-      "name": "To be completed, Author",
-      "affiliation": "To be completed"
+      "name": "Cabrera-Andrade, Alejandro",
+      "affiliation": "Universidad de Las Américas"
+    },
+    {
+      "name": "Robalino-Díaz, Jorge",
+      "affiliation": "Universidad de Las Américas"
+    },
+    {
+      "name": "Dueñas-Espín, Iván",
+      "affiliation": "Pontificia Universidad Católica del Ecuador"
+    },
+    {
+      "name": "Zambrano, Ana Karina",
+      "affiliation": "Universidad UTE"
+    },
+    {
+      "name": "Villegas-Ch, William",
+      "affiliation": "Universidad de Las Américas"
     }
   ],
   "license": "MIT",
