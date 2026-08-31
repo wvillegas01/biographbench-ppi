@@ -12,7 +12,7 @@ This repository includes:
 - statistical summaries used in manuscript tables and figures;
 - figure and table generation scripts.
 
-Large split files containing per-seed positive and sampled-nonedge CSV files should be archived as a versioned release asset or Zenodo dataset/software artifact. The local source path for the full split package is:
+Large split files containing per-seed positive and sampled-nonedge CSV files are represented by machine-readable manifests and can be regenerated with the provided split-generation scripts. The local source path for the full split package is:
 
 `C:\Users\wilop\Dropbox\MPDI\2026\BioGraphBench\Auditoria\data\processed\phase1_ppi_multiseed_splits`
 

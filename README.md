@@ -58,7 +58,7 @@ The retained GCN result tables are available in `results/phase1/ppi_gcn_link_pre
 
 ## Data Availability
 
-Raw STRING, BioGRID, and OBNB files must be obtained from their original providers according to their terms. This repository includes manifests and scripts required to recreate the processed artifacts. Large split files should be attached to the GitHub release or archived in Zenodo.
+Raw STRING, BioGRID, and OBNB files must be obtained from their original providers according to their terms. This repository includes manifests, scripts, retained result tables, and statistical summaries required to recreate and audit the processed artifacts. Large split CSV files are represented by machine-readable manifests and can be regenerated with the provided split-generation scripts.
 
 ## Citation
 
