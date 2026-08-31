@@ -16,4 +16,8 @@ Large split files containing per-seed positive and sampled-nonedge CSV files sho
 
 `C:\Users\wilop\Dropbox\MPDI\2026\BioGraphBench\Auditoria\data\processed\phase1_ppi_multiseed_splits`
 
-Before resubmission, replace repository placeholders in this file, `CITATION.cff`, `.zenodo.json`, and the manuscript with the active GitHub URL and Zenodo DOI.
+The public code repository is available at:
+
+`https://github.com/wvillegas01/biographbench-ppi`
+
+Before resubmission, archive release `v0.1.0` through Zenodo and replace the DOI placeholder in the manuscript with the assigned Zenodo DOI.

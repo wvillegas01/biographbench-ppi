@@ -7,7 +7,7 @@ authors:
     given-names: "Author"
 version: "0.1.0"
 date-released: "2026-08-31"
-repository-code: "https://github.com/USER_OR_ORG/biographbench-ppi"
+repository-code: "https://github.com/wvillegas01/biographbench-ppi"
 license: MIT
 keywords:
   - protein-protein interaction

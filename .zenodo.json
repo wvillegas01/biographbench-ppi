@@ -18,7 +18,7 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/USER_OR_ORG/biographbench-ppi",
+      "identifier": "https://github.com/wvillegas01/biographbench-ppi",
       "relation": "isSupplementTo",
       "scheme": "url"
     }

@@ -1,14 +1,14 @@
 # Release Checklist
 
 - [ ] Confirm author names, affiliations, ORCID IDs, and funder metadata.
-- [ ] Confirm the public repository name and URL.
-- [ ] Replace `USER_OR_ORG` placeholders in `CITATION.cff` and `.zenodo.json`.
+- [x] Confirm the public repository name and URL: `https://github.com/wvillegas01/biographbench-ppi`.
+- [x] Replace `USER_OR_ORG` placeholders in `CITATION.cff` and `.zenodo.json`.
 - [ ] Add the final article citation once available.
 - [ ] Run `make validate`.
 - [ ] Run `make test`.
 - [ ] Run or attach full GCN-PPI results before claiming reviewer-requested GNN evidence.
 - [ ] Create a public GitHub repository.
-- [ ] Push the repository.
+- [x] Push the repository.
 - [ ] Enable Zenodo GitHub integration for the public repository.
 - [ ] Create release `v0.1.0`.
 - [ ] Attach large split files as release assets or deposit them with the Zenodo record.
