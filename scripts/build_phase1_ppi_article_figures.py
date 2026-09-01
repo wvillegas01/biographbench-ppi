@@ -19,6 +19,7 @@ TABLES_DIR = ARTICLE_DIR / "tables"
 
 CLASSICAL_PATH = RESULTS_DIR / "ppi_link_prediction_baselines.csv"
 NODE2VEC_PATH = RESULTS_DIR / "ppi_node2vec_link_prediction.csv"
+GCN_PATH = RESULTS_DIR / "ppi_gcn_link_prediction.csv"
 
 DATASET_LABELS = {
     "string_human_physical_v12": "STRING",
@@ -47,9 +48,10 @@ MODEL_LABELS = {
     "random_forest": "RF",
     "hist_gradient_boosting": "HGB",
     "node2vec_walk_logreg": "node2vec",
+    "gcn_dot": "GCN",
 }
 
-MODEL_ORDER = ["logistic_regression", "random_forest", "hist_gradient_boosting", "node2vec_walk_logreg"]
+MODEL_ORDER = ["logistic_regression", "random_forest", "hist_gradient_boosting", "node2vec_walk_logreg", "gcn_dot"]
 
 PALETTE = {
     "random": "#4C78A8",
@@ -59,13 +61,16 @@ PALETTE = {
     "random_forest": "#4C78A8",
     "hist_gradient_boosting": "#E45756",
     "node2vec_walk_logreg": "#72B7B2",
+    "gcn_dot": "#B279A2",
 }
 
 
 def read_results() -> pd.DataFrame:
     classical = pd.read_csv(CLASSICAL_PATH)
     node2vec = pd.read_csv(NODE2VEC_PATH)
+    gcn = pd.read_csv(GCN_PATH)
     node2vec = node2vec.assign(model_family="embedding")
+    gcn = gcn.assign(model_family="gnn")
     shared = [
         "dataset",
         "negative_strategy",
@@ -84,7 +89,7 @@ def read_results() -> pd.DataFrame:
         "num_eval",
     ]
     node2vec["train_seconds"] = node2vec["walk_seconds"] + node2vec["embedding_seconds"] + node2vec["decoder_seconds"]
-    data = pd.concat([classical[shared], node2vec[shared]], ignore_index=True)
+    data = pd.concat([classical[shared], node2vec[shared], gcn[shared]], ignore_index=True)
     data["dataset_label"] = data["dataset"].map(DATASET_LABELS)
     data["negative_label"] = data["negative_strategy"].map(NEGATIVE_LABELS)
     data["model_label"] = data["model"].map(MODEL_LABELS).fillna(data["model"])
@@ -126,6 +131,22 @@ def save_summary_tables(data: pd.DataFrame) -> None:
     )
     summary.to_csv(TABLES_DIR / "table_phase1_model_regime_auprc.csv", index=False)
 
+    wide = summary.pivot_table(
+        index=["dataset", "negative_strategy"],
+        columns="model",
+        values="mean",
+    ).reset_index()
+    wide = wide.rename(
+        columns={
+            "logistic_regression": "logistic_regression_auprc_mean",
+            "random_forest": "random_forest_auprc_mean",
+            "hist_gradient_boosting": "hist_gradient_boosting_auprc_mean",
+            "node2vec_walk_logreg": "node2vec_compatible_auprc_mean",
+            "gcn_dot": "gcn_auprc_mean",
+        }
+    )
+    wide.to_csv(ARTICLE_DIR / "phase1_ppi_model_family_comparison.csv", index=False)
+
     pivot = summary.pivot_table(
         index=["dataset", "dataset_label", "model", "model_label"],
         columns="negative_strategy",
@@ -138,7 +159,7 @@ def save_summary_tables(data: pd.DataFrame) -> None:
     md_lines = [
         "# Phase 1 Final Quantitative Tables",
         "",
-        "Table A reports test AUPRC mean, SD, and 95% CI across 10 seeds for each dataset, negative regime, and model family.",
+        "Table A reports test AUPRC mean, SD, and 95% CI across 10 seeds for each dataset, negative regime, and model family, including the two-layer GCN link-prediction baseline.",
         "",
         "Table B reports the AUPRC reduction from random negatives to degree-matched and two-hop negatives.",
         "",
@@ -295,10 +316,10 @@ def figure_model_ranking(data: pd.DataFrame) -> Path:
         ax.set_xlabel("")
         ax.set_ylabel("Mean test AUPRC")
         ax.grid(axis="y", alpha=0.25)
-        ax.set_ylim(max(0.55, local["auprc"].min() - 0.06), min(1.0, local["auprc"].max() + 0.04))
+        ax.set_ylim(max(0.48, local["auprc"].min() - 0.04), min(1.0, local["auprc"].max() + 0.04))
         annotate_panel(ax, label)
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="lower center", ncol=4, frameon=False)
+    fig.legend(handles, labels, loc="lower center", ncol=5, frameon=False)
     fig.suptitle("Model-family profiles across negative-sampling regimes", y=1.01, fontsize=14, fontweight="bold")
     fig.tight_layout(rect=[0, 0.06, 1, 1])
     fig.savefig(path, dpi=350, bbox_inches="tight")
@@ -316,6 +337,7 @@ def figure_calibration_scalability(data: pd.DataFrame) -> Path:
         data=calibrated,
         x="model_label",
         y="ece_10",
+        order=[MODEL_LABELS[m] for m in MODEL_ORDER],
         hue="negative_label",
         hue_order=[NEGATIVE_LABELS[x] for x in NEGATIVE_ORDER],
         palette={NEGATIVE_LABELS[key]: value for key, value in PALETTE.items() if key in NEGATIVE_LABELS},

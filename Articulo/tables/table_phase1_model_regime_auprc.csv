@@ -1,48 +1,60 @@
 dataset,dataset_label,negative_strategy,negative_label,model,model_label,n,mean,sd,ci95_low,ci95_high
+biogrid_human_physical,BioGRID,degree_matched,Degree-matched,gcn_dot,GCN,10.0,0.4999635918954195,1.843134212625044e-05,0.4999521680312148,0.4999750157596242
 biogrid_human_physical,BioGRID,degree_matched,Degree-matched,hist_gradient_boosting,HGB,10.0,0.7704697531812752,0.001183645566067873,0.769736122058773,0.7712033843037774
 biogrid_human_physical,BioGRID,degree_matched,Degree-matched,logistic_regression,LogReg,10.0,0.716246468785804,0.00104044154681482,0.7156015964340041,0.7168913411376039
 biogrid_human_physical,BioGRID,degree_matched,Degree-matched,node2vec_walk_logreg,node2vec,10.0,0.6976216165777465,0.0031345470049401023,0.6956788042159264,0.6995644289395665
 biogrid_human_physical,BioGRID,degree_matched,Degree-matched,random_forest,RF,10.0,0.771188872072113,0.0012607391159914288,0.7704074578723201,0.7719702862719058
+biogrid_human_physical,BioGRID,random,Random,gcn_dot,GCN,10.0,0.5255979747814659,0.01027828518302187,0.5192274276241203,0.5319685219388114
 biogrid_human_physical,BioGRID,random,Random,hist_gradient_boosting,HGB,10.0,0.9428851653656087,0.00048769011200828127,0.9425828919025361,0.9431874388286814
 biogrid_human_physical,BioGRID,random,Random,logistic_regression,LogReg,10.0,0.9346724554233198,0.0006180758995222698,0.9342893680118877,0.9350555428347519
 biogrid_human_physical,BioGRID,random,Random,node2vec_walk_logreg,node2vec,10.0,0.8733706055212911,0.0016815566532697348,0.8723283659096583,0.8744128451329238
 biogrid_human_physical,BioGRID,random,Random,random_forest,RF,10.0,0.9422697425810311,0.0005196188801828305,0.9419476794624168,0.9425918056996455
+biogrid_human_physical,BioGRID,two_hop,Two-hop,gcn_dot,GCN,10.0,0.5000988641797607,8.592740937564472e-05,0.500045605819656,0.5001521225398654
 biogrid_human_physical,BioGRID,two_hop,Two-hop,hist_gradient_boosting,HGB,10.0,0.7743821295232942,0.0010596310495295292,0.7737253633944884,0.7750388956521
 biogrid_human_physical,BioGRID,two_hop,Two-hop,logistic_regression,LogReg,10.0,0.6543150927991406,0.0016779041652561413,0.6532751170230328,0.6553550685752484
 biogrid_human_physical,BioGRID,two_hop,Two-hop,node2vec_walk_logreg,node2vec,10.0,0.6389578813396859,0.001514275897285379,0.6380193234147877,0.6398964392645841
 biogrid_human_physical,BioGRID,two_hop,Two-hop,random_forest,RF,10.0,0.7729385276864275,0.0010877164291174615,0.7722643540590058,0.7736127013138491
+biogrid_human_physical_no_string_overlap,BioGRID no-STRING,degree_matched,Degree-matched,gcn_dot,GCN,10.0,0.5000153660939166,7.024163265360247e-05,0.4999718298789488,0.5000589023088844
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,degree_matched,Degree-matched,hist_gradient_boosting,HGB,10.0,0.6835907473588011,0.0016476093000542542,0.6825695485346807,0.6846119461829215
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,degree_matched,Degree-matched,logistic_regression,LogReg,10.0,0.5938747323892938,0.0016381486438291942,0.5928593973406522,0.5948900674379354
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,degree_matched,Degree-matched,node2vec_walk_logreg,node2vec,10.0,0.7246633491987237,0.0027586543553353815,0.722953517514883,0.7263731808825643
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,degree_matched,Degree-matched,random_forest,RF,10.0,0.6865394972778549,0.0013204492841705595,0.6857210743324021,0.6873579202233077
+biogrid_human_physical_no_string_overlap,BioGRID no-STRING,random,Random,gcn_dot,GCN,10.0,0.5908181346792136,0.025546160133578723,0.5749844605864877,0.6066518087719396
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,random,Random,hist_gradient_boosting,HGB,10.0,0.9422556427768292,0.0006720639320589148,0.9418390932361524,0.9426721923175059
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,random,Random,logistic_regression,LogReg,10.0,0.9328334199487994,0.0007385796158269986,0.9323756435601999,0.933291196337399
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,random,Random,node2vec_walk_logreg,node2vec,10.0,0.8984682466799004,0.0014385814971402734,0.8975766046302758,0.8993598887295251
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,random,Random,random_forest,RF,10.0,0.9408772401622226,0.000624207269995464,0.9404903524879993,0.941264127836446
+biogrid_human_physical_no_string_overlap,BioGRID no-STRING,two_hop,Two-hop,gcn_dot,GCN,10.0,0.5011552366749562,0.00057095187733993,0.5008013570350746,0.5015091163148379
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,two_hop,Two-hop,hist_gradient_boosting,HGB,10.0,0.8492723385746649,0.000991020372004169,0.8486580977843654,0.8498865793649644
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,two_hop,Two-hop,logistic_regression,LogReg,10.0,0.7222899871036739,0.0018244541780320477,0.7211591786885924,0.7234207955187554
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,two_hop,Two-hop,node2vec_walk_logreg,node2vec,10.0,0.6048050708141677,0.0024632554869469343,0.6032783292458265,0.6063318123825089
 biogrid_human_physical_no_string_overlap,BioGRID no-STRING,two_hop,Two-hop,random_forest,RF,10.0,0.8302262157363971,0.0013463513367983407,0.8293917385323984,0.8310606929403958
+string_human_physical_no_biogrid_overlap,STRING no-BioGRID,degree_matched,Degree-matched,gcn_dot,GCN,10.0,0.5003438748705631,0.0005958691127955775,0.4999745513681426,0.5007131983729836
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,degree_matched,Degree-matched,hist_gradient_boosting,HGB,10.0,0.9156422376607678,0.0006829336051319255,0.915218951026922,0.9160655242946136
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,degree_matched,Degree-matched,logistic_regression,LogReg,10.0,0.8888867771137647,0.0017610719741600418,0.8877952533956451,0.8899783008318843
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,degree_matched,Degree-matched,node2vec_walk_logreg,node2vec,10.0,0.9035966830331972,0.0018646254553190624,0.9024409762024975,0.9047523898638968
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,degree_matched,Degree-matched,random_forest,RF,10.0,0.915105174807762,0.0007446207195578082,0.9146436541042778,0.9155666955112461
+string_human_physical_no_biogrid_overlap,STRING no-BioGRID,random,Random,gcn_dot,GCN,10.0,0.7170506660144248,0.030607540303616412,0.6980799159911982,0.7360214160376514
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,random,Random,hist_gradient_boosting,HGB,10.0,0.9641543982549579,0.0009697791999247683,0.9635533228795111,0.9647554736304046
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,random,Random,logistic_regression,LogReg,10.0,0.9597896043579063,0.0011638375690863876,0.9590682503591281,0.9605109583566844
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,random,Random,node2vec_walk_logreg,node2vec,10.0,0.9405308036910016,0.0015611308861583602,0.9395632047431257,0.9414984026388775
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,random,Random,random_forest,RF,10.0,0.963660412088206,0.0009312715210118711,0.9630832040194224,0.9642376201569895
+string_human_physical_no_biogrid_overlap,STRING no-BioGRID,two_hop,Two-hop,gcn_dot,GCN,10.0,0.5153273203365402,0.005404144361511287,0.5119777969591407,0.5186768437139396
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,two_hop,Two-hop,hist_gradient_boosting,HGB,10.0,0.8467412138064052,0.0007246055398052102,0.846292098639857,0.8471903289729534
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,two_hop,Two-hop,logistic_regression,LogReg,10.0,0.6819302896839908,0.002452021216876915,0.6804105111883786,0.6834500681796031
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,two_hop,Two-hop,node2vec_walk_logreg,node2vec,10.0,0.7356061245476386,0.002245748488593923,0.7342141952135744,0.7369980538817028
 string_human_physical_no_biogrid_overlap,STRING no-BioGRID,two_hop,Two-hop,random_forest,RF,10.0,0.8510164837038552,0.0006966314241381279,0.8505847070738303,0.8514482603338801
+string_human_physical_v12,STRING,degree_matched,Degree-matched,gcn_dot,GCN,10.0,0.4997254300956519,0.00010477972158125035,0.4996604869513841,0.4997903732399197
 string_human_physical_v12,STRING,degree_matched,Degree-matched,hist_gradient_boosting,HGB,10.0,0.8813241993239519,0.0006285235009316348,0.880934636422078,0.8817137622258258
 string_human_physical_v12,STRING,degree_matched,Degree-matched,logistic_regression,LogReg,10.0,0.8644464426505098,0.0007188477436595458,0.8640008962029858,0.8648919890980339
 string_human_physical_v12,STRING,degree_matched,Degree-matched,node2vec_walk_logreg,node2vec,10.0,0.8040311765910854,0.0017602994961283772,0.8029401316598102,0.8051222215223606
 string_human_physical_v12,STRING,degree_matched,Degree-matched,random_forest,RF,10.0,0.8805165707736042,0.0007394961925263235,0.8800582262848807,0.8809749152623277
+string_human_physical_v12,STRING,random,Random,gcn_dot,GCN,10.0,0.5348883834415727,0.013599077507563121,0.526459587877364,0.5433171790057815
 string_human_physical_v12,STRING,random,Random,hist_gradient_boosting,HGB,10.0,0.9502610430996059,0.0006460264422789381,0.9498606317622917,0.9506614544369201
 string_human_physical_v12,STRING,random,Random,logistic_regression,LogReg,10.0,0.9456440881943984,0.0007001372672017837,0.9452101386203302,0.9460780377684666
 string_human_physical_v12,STRING,random,Random,node2vec_walk_logreg,node2vec,10.0,0.8767361994981867,0.001070398475473622,0.8760727596496389,0.8773996393467345
 string_human_physical_v12,STRING,random,Random,random_forest,RF,10.0,0.9498437475032221,0.0006552191218629553,0.9494376384840719,0.9502498565223723
+string_human_physical_v12,STRING,two_hop,Two-hop,gcn_dot,GCN,10.0,0.500620581352502,0.0004612705714729406,0.5003346828903035,0.5009064798147005
 string_human_physical_v12,STRING,two_hop,Two-hop,hist_gradient_boosting,HGB,10.0,0.856381657858079,0.0008537289972412048,0.8558525111434595,0.8569108045726984
 string_human_physical_v12,STRING,two_hop,Two-hop,logistic_regression,LogReg,10.0,0.7527181416733632,0.0009295470709780524,0.7521420024297839,0.7532942809169424
 string_human_physical_v12,STRING,two_hop,Two-hop,node2vec_walk_logreg,node2vec,10.0,0.730961901868507,0.001275976014418552,0.7301710437412269,0.731752759995787

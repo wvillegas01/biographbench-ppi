@@ -1,6 +1,6 @@
 # Phase 1 Final Quantitative Tables
 
-Table A reports test AUPRC mean, SD, and 95% CI across 10 seeds for each dataset, negative regime, and model family.
+Table A reports test AUPRC mean, SD, and 95% CI across 10 seeds for each dataset, negative regime, and model family, including the two-layer GCN link-prediction baseline.
 
 Table B reports the AUPRC reduction from random negatives to degree-matched and two-hop negatives.
 
